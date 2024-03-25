@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // constmysentence ="capatailize each word"
+        // const words =mysentence.split(" ")
+        // for(var i=0;i<words.length;i++){
+        //     word[i]=words[i][0].toUppercase()+words[i].substr(i)
+            
+        // }
+        // const newsent=words.join(" ")
+        // console.log(newsent)
+                function capital_letter(str){
+                    str =str.split(" ");
+                    for (var i = 0, x = str.length; i < x; i++) {
+                        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+
+                    }
+                    return str.join(" ");
+                }
+                console.log(capital_letter("JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.")); 
+
+
+
+
+
+
+    </script>
+</body>
+</html>

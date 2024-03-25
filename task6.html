@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower to Uppercase</title>
+</head>
+<body>
+    <script>
+        // const lowercase ="uppercase and lowercase each in the string"
+        // const words = lowercase.split(" ")
+        // for (var i=0;i<words.length;i++){
+        //     words[i]=words[i][0].toUpperCase().toLowerCase()+words[i].substr(1)
+        // }
+        // const oldsentence=words.join(" ")
+        // console.log (oldsentence)
+        
+        swapcase = function swapcase(str) {
+            return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, chr) {
+                return chr ? match.toUpperCase() : match.toLowerCase();
+    });
+}
+              console.log(swapcase('AaBbcDeFg'));
+    </script>
+</body>
+</html>
